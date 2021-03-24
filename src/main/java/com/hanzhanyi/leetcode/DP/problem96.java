@@ -1,5 +1,9 @@
 package com.hanzhanyi.leetcode.DP;
 
+import com.google.common.collect.Lists;
+
+import java.util.ArrayList;
+
 /**
  * Created by hanzhanyi on 2020/9/9.
  * 96. 不同的二叉搜索树
@@ -34,6 +38,8 @@ public class problem96 {
             }
             dp[i] = sum;
         }
+        ArrayList<Object> objects = Lists.newArrayList();
+        String s ;
         return  dp[n];
     }
 
